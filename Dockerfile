@@ -3,7 +3,7 @@ FROM registry.cn-beijing.aliyuncs.com/wa/dev:golang_1.23 AS building
 
 ENV APP=push-proxy
 ENV CGO_ENABLED=0
-# ENV GOPROXY=https://goproxy.cn,direct
+ENV GOPROXY=https://goproxy.cn,direct
 # ENV GOCACHE=/go/src/owl/.gocache
 # ENV GOMODCACHE=/go/src/owl/.gocache/mod
 
